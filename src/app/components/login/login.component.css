@@ -1,5 +1,5 @@
 .offset{
-    padding-top:5%;
+    padding-top:10%;
 }
 
 body,
@@ -12,7 +12,6 @@ body,
 }
 
 .login {
-  position: fixed;
   height: 560px;
   width: 405px;
   margin: auto;
@@ -23,7 +22,7 @@ body,
 }
 
 form {
-  padding-top: 80px;
+  padding-top: 10%;
 }
 
 .active {
@@ -38,7 +37,6 @@ h2 {
   padding-left: 12px;
   font-size: 22px;
   text-transform: uppercase;
-  padding-bottom: 5px;
   letter-spacing: 2px;
   display: inline-block;
   font-weight: 100;
@@ -149,10 +147,28 @@ label {
   border: none;
   text-transform: uppercase;
 }
+.signinG {
+  background-color: #1161ed;
+  color: #FFF;
+  width: 100%;
+  padding: 5px 5px;
+  display: block;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 10%;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+}
 
 .signin:hover {
   background: #4082f5;
   box-shadow: 0px 4px 35px -5px #4082f5;
+  cursor: pointer;
+}
+.signinG:hover {
+  background: brown;
+  box-shadow: 0px 4px 35px -5px brown;
   cursor: pointer;
 }
 

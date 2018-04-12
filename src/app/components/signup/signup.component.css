@@ -1,5 +1,5 @@
 .offset{
-    padding-top:5%;
+    padding-top:10%;
 }
 
 body,
@@ -12,7 +12,6 @@ body,
 }
 
 .login {
-  position: fixed;
   height: 560px;
   width: 405px;
   margin: auto;
