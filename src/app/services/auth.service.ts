@@ -25,6 +25,7 @@ export class AuthService {
     );
   }
   signInWithGoogle() {
+    console.log('here2')
     return this._firebaseAuth.auth.signInWithPopup(
       new firebase.auth.GoogleAuthProvider()
     )

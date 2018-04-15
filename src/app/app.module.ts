@@ -26,10 +26,10 @@ const appRoutes: Routes = [
   {path: 'home', component: HomeComponent },
   {path: 'login', component: LoginComponent },
   {path: 'signup', component: SignupComponent },
-  {path: 'daily', component: TodayComponent },
-  {path: 'weekly', component: WeeklyComponent},
-  {path: 'monthly', component:MonthlyComponent },
-  {path: 'yearly', component:YearlyComponent },
+  {path: 'daily', component: TodayComponent, canActivate:[AuthGuardService] },
+  {path: 'weekly', component: WeeklyComponent, canActivate:[AuthGuardService]},
+  {path: 'monthly', component:MonthlyComponent, canActivate:[AuthGuardService] },
+  {path: 'yearly', component:YearlyComponent, canActivate:[AuthGuardService] },
   {path: '',redirectTo: '/home',pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent }
 ];
