@@ -20,6 +20,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import {AuthService} from './services/auth.service';
 import { AuthGuardService } from './services/auth-guard.service';
+import { TodosComponent } from './components/todos/todos.component';
 
 
 const appRoutes: Routes = [
@@ -45,7 +46,8 @@ const appRoutes: Routes = [
     YearlyComponent,
     PageNotFoundComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    TodosComponent
   ],
   imports: [
     BrowserModule,
