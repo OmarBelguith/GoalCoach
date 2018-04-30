@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todos.component.css']
 })
 export class TodosComponent implements OnInit {
-
-  constructor() { }
+  cards:any
+  constructor() { 
+    this.cards = ['1'];
+  }
 
   ngOnInit() {
   }
-
+  addCard(){
+    this.cards.push('');
+  }
 }

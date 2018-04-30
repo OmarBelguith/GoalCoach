@@ -7,7 +7,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 
-
+import { BsModalModule } from 'ng2-bs3-modal';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
@@ -21,7 +21,8 @@ import { SignupComponent } from './components/signup/signup.component';
 import {AuthService} from './services/auth.service';
 import { AuthGuardService } from './services/auth-guard.service';
 import { TodosComponent } from './components/todos/todos.component';
-
+import { CardComponent } from './components/card/card.component';
+import {NgcFloatButtonModule} from 'ngc-float-button';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent },
@@ -47,8 +48,9 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     LoginComponent,
     SignupComponent,
-    TodosComponent
-  ],
+    TodosComponent,
+    CardComponent
+    ],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -56,7 +58,9 @@ const appRoutes: Routes = [
       appRoutes
     ),AngularFireModule.initializeApp(environment.firebase, 'angular-auth-firebase'),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    NgcFloatButtonModule,
+    BsModalModule
   ],
   providers: [AuthService, AuthGuardService],
   bootstrap: [AppComponent]
