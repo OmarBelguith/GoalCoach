@@ -23,6 +23,7 @@ import { AuthGuardService } from './services/auth-guard.service';
 import { TodosComponent } from './components/todos/todos.component';
 import { CardComponent } from './components/card/card.component';
 import {NgcFloatButtonModule} from 'ngc-float-button';
+import { ComponentsComponent } from './components/components.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent },
@@ -49,7 +50,8 @@ const appRoutes: Routes = [
     LoginComponent,
     SignupComponent,
     TodosComponent,
-    CardComponent
+    CardComponent,
+    ComponentsComponent
     ],
   imports: [
     BrowserModule,
